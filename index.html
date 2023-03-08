@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGPA Calculator</title>
+    <link href="./style.css" type="text/css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header section starts -->
+    <div class="header">
+      <div class="topic" id="topic">
+        <h1><span>GPA </span>& <span>CGPA </span>Calculator</h1>
+      </div>
+      <div class="nav-bar">
+        <ul>
+          <li><a href="#gpa">GPA</a></li>
+          <li><a href="#cgpa">CGPA</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- header section ends -->
+    <div id="menu" class="fas fa-bars"></div>
+    <!-- gpa section starts -->
+    <section class="gpa" id="gpa">
+      <div class="gpacalc" id="gpacalc">
+        <h1><span>GPA</span> Calculator</h1>
+        <form>
+          <div class="formelem" id="formelem1">
+            <label for="sub_count">Enter the No of Subjects:</label>
+            <input id="sub_count" type="text" />
+            <button class="btn" id="create-textbox-btn" onclick="onClick()">
+              CREATE
+            </button>
+          </div>
+          <div class="topicsform" id="topicsform">
+            <h1>SUBJECTS</h1>
+            <h1>CREDIT POINT</h1>
+            <h1 style="padding-left: 225px">GRADE</h1>
+          </div>
+          <div id="textboxes-container"></div>
+          <button
+            class="btn"
+            id="calculate_gpa_btn"
+            type="button"
+            onclick="calculateGPA()"
+          >
+            CALCULATE
+          </button>
+          <div class="result" id="resultgpa">
+            <h1 class="result" id="resultStr"></h1>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- gpa section ends -->
+    <!-- cgpa section starts -->
+    <section class="cgpa" id="cgpa">
+      <div class="cgpacalc" id="cgpacalc">
+        <h1><span>CGPA</span> Calculator</h1>
+        <form>
+          <div class="formelem" id="formelem2">
+            <label for="sem_count">Enter the No of Semesters:</label>
+            <input id="sem_count" type="text" />
+            <button class="btn" id="create-textbox-btn-1" onclick="onClick1()">
+              CREATE
+            </button>
+            <button class="btn" id="create-textbox-btn-2" onclick="onClick2()">
+              SUB_CREATE
+            </button>
+          </div>
+          <div id="textboxes-container1"></div>
+          <div id="textboxes-container2"></div>
+          <button
+            class="btn"
+            id="calculate_cgpa_btn"
+            type="button"
+            onclick="calculateCGPA()"
+          >
+            CALCULATE
+          </button>
+          <div class="result" id="resultcgpa">
+            <h1 class="result" id="resultStr1"></h1>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- cgpa section ends -->
+    <!-- custom js file link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

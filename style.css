@@ -1,0 +1,323 @@
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar-track {
+  background: #222;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--yellow);
+}
+
+body {
+  background: wheat;
+  overflow-x: hidden;
+  padding-left: 35rem;
+}
+
+#menu {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  padding: 1rem 1.5rem;
+  z-index: 1000;
+  display: none;
+}
+
+section {
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+section h1 {
+  padding-top: 5rem;
+  color: #333;
+  font-size: 45px;
+}
+
+section h1 span {
+  color: rgb(139, 77, 77);
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#topic {
+  font-size: 20px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+#topic span {
+  color: wheat;
+}
+
+.nav-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar ul li {
+  text-align: center;
+}
+.nav-bar li a {
+  display: block;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background: #333;
+  color: wheat;
+  font-size: 2rem;
+  border-radius: 5rem;
+}
+
+.nav-bar li a:hover {
+  background-color: wheat;
+  color: #222;
+}
+
+/* cgpa gpa css starts */
+
+form {
+  padding-top: 5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+form input[type="text"] {
+  width: 8rem;
+  height: 3.5rem;
+  border-radius: 5rem;
+  font-size: 20px;
+  text-align: center;
+}
+
+form label {
+  font-size: 30px;
+  padding-bottom: 15px;
+  text-transform: none;
+  color: rgb(139, 77, 77);
+}
+
+form p {
+  font-size: 30px;
+  padding-bottom: 15px;
+  text-transform: none;
+  color: rgb(139, 77, 77);
+}
+
+form .formelem {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form .formelem input {
+  margin-left: 20px;
+}
+
+form button {
+  margin-left: 40px;
+  width: 9rem;
+  height: 3.5rem;
+  color: aliceblue;
+  border-radius: 3rem;
+  background-color: rgb(139, 77, 77);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #8d2e2e;
+}
+
+form button:active {
+  background-color: rgb(139, 77, 77);
+  box-shadow: 0 5px #8d2e2e;
+  transform: translateY(4px);
+}
+
+form #textboxes-container input[type="text"] {
+  margin-right: 30px;
+}
+
+form #calculate_cgpa_btn {
+  margin-left: 280px;
+  margin-top: 35px;
+}
+form #calculate_gpa_btn {
+  margin-left: 280px;
+  margin-top: 35px;
+}
+/* cgpa gpa css ends */
+
+/* created textboxes css starts */
+
+form #topicsform {
+  display: flex;
+  flex-wrap: wrap;
+}
+form #topicsform h1 {
+  margin-left: 5px;
+  margin-right: 90px;
+  font-size: 30px;
+}
+
+form #textboxes-container input[type="text"] {
+  margin-right: 30px;
+}
+
+form #textboxes-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+form #textboxes-container div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.radio_div {
+  margin-left: 30px;
+}
+.radio_div input[type="radio"] {
+  margin-left: 30px;
+}
+#gpa form #textboxes-container > div {
+  padding-top: 20px;
+}
+
+#gpa form #textboxes-container div input[type="text"] {
+  margin-left: 140px;
+}
+
+#gpa form #textboxes-container div label {
+  margin-left: 20px;
+}
+
+#gpa form #textboxes-container div select {
+  margin-left: 140px;
+  width: 8rem;
+  height: 3.5rem;
+  border-radius: 5rem;
+  font-size: 20px;
+  text-align: center;
+}
+/* created textboxes css ends */
+
+/*cgpa css starts*/
+#cgpa form #textboxes-container1 > div {
+  padding-top: 20px;
+}
+
+#cgpa form #textboxes-container1 div input[type="text"] {
+  margin-left: 140px;
+}
+
+#cgpa form #textboxes-container1 div label {
+  margin-left: 20px;
+}
+
+#cgpa form #textboxes-container1 div select {
+  margin-left: 140px;
+  width: 8rem;
+  height: 3.5rem;
+  border-radius: 5rem;
+  font-size: 20px;
+  text-align: center;
+}
+
+form #textboxes-container2 input[type="text"] {
+  margin-right: 30px;
+}
+
+form #textboxes-container2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+form #textboxes-container2 div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.radio_div1 {
+  margin-left: 30px;
+}
+.radio_div1 input[type="radio"] {
+  margin-left: 30px;
+}
+#cgpa form #textboxes-container2 > div {
+  padding-top: 20px;
+}
+
+#cgpa form #textboxes-container2 div input[type="text"] {
+  margin-left: 140px;
+}
+
+#cgpa form #textboxes-container2 div label {
+  margin-left: 20px;
+}
+
+#cgpa form #textboxes-container2 div select {
+  margin-left: 140px;
+  width: 8rem;
+  height: 3.5rem;
+  border-radius: 5rem;
+  font-size: 20px;
+  text-align: center;
+}
+/*cgpa css ends*/
+
+/* media queries */
+
+@media (max-width: 1350px) {
+  .header {
+    left: -120%;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  .header.toggle {
+    left: 0%;
+  }
+
+  body {
+    padding: 0;
+  }
+}
